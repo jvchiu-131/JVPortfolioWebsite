@@ -98,14 +98,6 @@ const ContactSection = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    console.log(
-  "ENV",
-  process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-  process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-  process.env.NEXT_PUBLIC_EMAILJS_USER_ID
-);
-
-
     const { name, email, message } = formData;
 
     if (!name || !email || !message) {
