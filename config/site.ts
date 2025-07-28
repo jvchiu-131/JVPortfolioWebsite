@@ -62,6 +62,5 @@ export const siteConfig = {
   links: {
     github: "https://github.com/jvchiu-131",
     linkedIn: "https://www.linkedin.com/in/john-von-roger-chiu-b65345239/",
-    sponsor: "https://patreon.com/jrgarciadev",
   },
 };
