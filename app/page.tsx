@@ -18,11 +18,39 @@ const Home = () => {
 
     return(
     <div className="flex flex-col flex-grow">
-      <HeroSection/>
+      <div
+      className="bg-center bg-cover bg-no-repeat"
+       style={{
+          backgroundImage: `url('/wavy-gradient.svg')`,
+        
+        }} >
+          <HeroSection/>
+      </div>
+      <div 
+      className="bg-center bg-cover bg-no-repeat"
+       style={{
+          backgroundImage: `url('/wave-gradient.svg')`,
+        
+        }}>
       <AboutSection/>
-      <ExperienceSection/>
+      </div>
+      <div className="bg-center bg-cover bg-no-repeat"
+       style={{
+          backgroundImage: `url('/blured.svg')`,
+        
+        }}>
+          <ExperienceSection/>
+      </div>
+    
       <ProjectsSection/>
-      <ContactSection/>
+
+      <div className="bg-center bg-cover bg-no-repeat"
+      style={{
+        backgroundImage: `url('/contactsbg.svg')`
+      }}
+      >
+        <ContactSection/>
+      </div>
 
     </div>
   )

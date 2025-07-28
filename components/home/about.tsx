@@ -6,6 +6,7 @@ import 'swiper/css/free-mode'
 import Image from 'next/image';
 import { title, subtitle } from "@/components/primitives";
 import {Card, CardHeader, CardFooter} from "@heroui/card"
+import clsx from 'clsx';
 
 
 const AboutSection = () => {
@@ -239,10 +240,10 @@ const AboutSection = () => {
             <div className='flex justify-center items-center my-5 mx-2 '>
                 <Carousel/>
             </div>
-            <div className='flex flex-col justify-center items-center'>
+            <div className='flex flex-col justify-center items-center mt-24'>
                 <div>
-                    <div className="h-10 my-10 flex justify-center items-center">
-                        <span className={title({ size: 'lg'})}>
+                    <div className="h-10 mb-20 flex justify-center items-center">
+                        <span className={clsx(title({size: 'lg'}), "text-[#0f1626]")}>
                             A little bit <span className={title({ color: "neonPinkPurple", size: 'lg'})}>About Me</span>
                         </span>             
                     </div>
